@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:prectice_task/core/model/compability.dart';
+import 'package:prectice_task/core/model/schedule.dart';
 import 'package:prectice_task/custom_continer1.dart';
 import 'package:prectice_task/custom_continer2.dart';
 import 'package:prectice_task/text_style.dart';
@@ -6,54 +8,54 @@ import 'textfomafield.dart';
 import 'custom_continer3.dart';
 
 class HomeScreen extends StatelessWidget {
-  final List<CustomContiner1> mylist = [
-    CustomContiner1(
+  final List<CompabilityModel> mylist = [
+    CompabilityModel(
       img: "assets/img/women.png",
       title: "Alexis Ray",
       subtitle: "San Francisco",
     ),
 
-    CustomContiner1(
+    CompabilityModel(
       img: "assets/img/man.png",
       title: "Jordan Lee",
       subtitle: "New York",
     ),
-    CustomContiner1(
+    CompabilityModel(
       img: "assets/img/women.png",
       title: "Taylor Kim",
       subtitle: "Chicago",
     ),
-    CustomContiner1(
+    CompabilityModel(
       img: "assets/img/man.png",
       title: "Jordan Lee",
       subtitle: "New York",
     ),
-    CustomContiner1(
+    CompabilityModel(
       img: "assets/img/cooking.png",
       title: "Jordan Lee",
       subtitle: "New York",
     ),
   ];
-  final List<CustomContiner3> list2 = [
-    CustomContiner3(
+  final List<Schedule> list2 = [
+    Schedule(
       imgh: "assets/img/vallyboll.png",
       title1: "Beach Volleyball",
       subtitle1: "Monday, 5:00 PM",
     ),
-    CustomContiner3(
-      imgh: "assets/img/cooking.png",
-      title1: "Cooking Class",
-      subtitle1: "Wednesday, 6:00 PM",
-    ),
-    CustomContiner3(
+    Schedule(
       imgh: "assets/img/vallyboll.png",
       title1: "Beach Volleyball",
       subtitle1: "Monday, 5:00 PM",
     ),
-    CustomContiner3(
-      imgh: "assets/img/cooking.png",
-      title1: "Cooking Class",
-      subtitle1: "Wednesday, 6:00 PM",
+    Schedule(
+      imgh: "assets/img/vallyboll.png",
+      title1: "Beach Volleyball",
+      subtitle1: "Monday, 5:00 PM",
+    ),
+    Schedule(
+      imgh: "assets/img/vallyboll.png",
+      title1: "Beach Volleyball",
+      subtitle1: "Monday, 5:00 PM",
     ),
   ];
 
@@ -81,7 +83,7 @@ class HomeScreen extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: mylist[index],
+                        child: CustomContiner1(compabilityModel: mylist[index]),
                       );
                     },
                   ),
@@ -141,13 +143,14 @@ class HomeScreen extends StatelessWidget {
 
                 SizedBox(
                   height: 250,
+
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: list2.length,
                     itemBuilder: (context, index) {
                       return Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: list2[index],
+                        child: CustomContiner3(schedule: list2[index]),
                       );
                     },
                   ),

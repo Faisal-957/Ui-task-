@@ -23,7 +23,9 @@ class CustomContiner2 extends StatelessWidget {
       height: 325,
 
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.black, width: 0.5),
+        color: Colors.white,
+        // border: Border.all(color: Colors.black, width: 0.5),
+        boxShadow: [BoxShadow(color: Colors.black)],
         borderRadius: BorderRadius.circular(18),
       ),
       child: Column(
