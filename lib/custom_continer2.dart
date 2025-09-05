@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prectice_task/text_style.dart';
+import 'package:prectice_task/core/constant/text_style.dart';
 
 class CustomContiner2 extends StatelessWidget {
   final String img;

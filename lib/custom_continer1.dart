@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prectice_task/core/model/compability.dart';
-import 'package:prectice_task/text_style.dart';
+import 'package:prectice_task/core/constant/text_style.dart';
 
 class CustomContiner1 extends StatelessWidget {
   CompabilityModel? compabilityModel;

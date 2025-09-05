@@ -3,8 +3,8 @@ import 'package:prectice_task/core/model/compability.dart';
 import 'package:prectice_task/core/model/schedule.dart';
 import 'package:prectice_task/custom_continer1.dart';
 import 'package:prectice_task/custom_continer2.dart';
-import 'package:prectice_task/text_style.dart';
-import 'textfomafield.dart';
+import 'package:prectice_task/core/constant/text_style.dart';
+import 'core/constant/textfomafield.dart';
 import 'custom_continer3.dart';
 
 class HomeScreen extends StatelessWidget {
